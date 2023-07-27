@@ -13,6 +13,8 @@ How to replicate issue
 ### Expected behaviour
 - Only the original selected item should be selected, reordering should not produce two selected items
 
+
+### Env
 - net6.0-windows10.0.19041.0
 - Microsoft.WindowsAppSDK  1.3.230502000
 - Windows 11 22H2 22621.1992
