@@ -31,11 +31,5 @@ namespace DnD_Test
             grid_main.DataContext = vm;
             NameList.ItemsSource = vm.People;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            vm.People.Add(new Person("10", "P", "Q"));
-            vm.People[0].FirstName = "Sandra";
-        }
     }
 }
