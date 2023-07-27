@@ -53,7 +53,7 @@ namespace DnD_Test
         public ObservableCollection<Person> People
         {
             get { return _fn; }
-            set { _fn = value; OnPropertyChanged("Fn"); }
+            set { _fn = value; OnPropertyChanged("People"); }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
