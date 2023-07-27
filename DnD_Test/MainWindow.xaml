@@ -20,18 +20,19 @@
             Margin="55 10 0 0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            AllowDrop="True"
+            AllowDrop="True" 
+            SelectionMode="Single"
             CanReorderItems="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
 
                     <StackPanel Orientation="Horizontal">
 
-                        <TextBlock Text="{Binding Index}" />
+                        <TextBlock Text="{Binding Index, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-                        <TextBlock Margin="5 0 0 0" Text="{Binding FirstName}" />
+                        <TextBlock Margin="5 0 0 0" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-                        <TextBlock Margin="5 0 0 0" Text="{Binding LastName}" />
+                        <TextBlock Margin="5 0 0 0" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                     </StackPanel>
 
